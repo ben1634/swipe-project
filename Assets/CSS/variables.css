@@ -1,0 +1,27 @@
+/* variables.css */
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #64748b;
+  --danger-color: #ef4444;
+
+  --font-main: Arial, sans-serif;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+
+  --border-radius: 8px;
+
+
+/* for swiper project */
+  --base-clr: #11121a;
+  --line-clr: #42434a;
+  --color-bg-primary: #222533;
+  --hover-clr: #455872;
+  --text-clr: #e6e6ef;
+  --accent-clr: #5e63ff;
+  --color-hover-primary: #695cfe;
+  --secondary-text-clr: #b0b3c1;
+  --color-shadow: rgba(105, 103, 103, 0.5);
+}

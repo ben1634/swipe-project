@@ -1,0 +1,34 @@
+<!-- Documentation for the project.
+
+The .md stands for Markdown.
+
+When someone opens your project, this is usually the first file they read.-->
+
+
+
+# Todo App
+
+A simple todo application built with HTML, CSS and JavaScript.
+
+## Features
+
+- Add tasks
+- Delete tasks
+- Search tasks
+
+## Folder Structure
+
+```text
+css/
+js/
+assets/
+```
+
+## Installation
+
+1. Clone repository
+2. Open index.html
+
+## Author
+
+Jimmy
