@@ -1,7 +1,7 @@
 console.log("JavaScript loaded");
 const sideToggle = document.querySelector(".navy");
 const sidebar = document.querySelector(".sidebar");
-const outer = document.querySelector(".nav-conty");
+const outer = document.querySelector(".middle-content");
 const searchBtn = document.querySelector(".search-btn");
 const searchHead = document.querySelector(".s-head");
 const answer = document.querySelector(".answer");
@@ -14,6 +14,11 @@ const searchBar = document.getElementById("search-input");
 const sidebarContent = document.getElementById("sidebar-content");
 const sidelinks = document.querySelectorAll("[data-panel]");
 const sidebar2 = document.querySelector(".sidebar2");
+const hamBtn = document.querySelector(".ham");
+const navbar = document.querySelector(".navbar");
+const navlinks = document.querySelector(".navlinks");
+const navToggle = document.querySelector(".navbar");
+
 
 console.log(searchBtn);
 console.log(searchHead);
@@ -86,6 +91,13 @@ document.addEventListener("keydown", (event) => {
     searchHead.classList.add("active");
     searchBar.focus();
   }
+});
+
+// Hamburger
+hamBtn.addEventListener("click", function () {
+  hamBtn.classList.toggle("active");
+  navbar.classList.toggle("active");
+  navlinks.classList.toggle("active");
 });
 
 // Open
@@ -182,16 +194,6 @@ sidelinks.forEach((sidelink) => {
         break;
     }
   });
-});
-
-const hamBtn = document.querySelector(".ham");
-const navbar = document.querySelector(".navbar");
-const navlinks = document.querySelector(".navlinks");
-
-hamBtn.addEventListener("click", function () {
-  hamBtn.classList.toggle("active");
-  navbar.classList.toggle("active");
-  navlinks.classList.toggle("active");
 });
 
 /*
