@@ -189,9 +189,11 @@ display: none;
 }
 
 
+
+
 /* Navbar */
 
-.nav-conty {
+.middle-content {
   margin-top: 72px;
   display: flex;
   flex-direction: column;
@@ -209,13 +211,23 @@ display: none;
   margin-top: -10px;
 }
 
+
+.logo {
+  color: white;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+
+
+
 .navbar {
-  background-color: #19344e66;
-  display: flex;
+  background-color:transparent;
+  display:flex;
   align-items: center;
-  justify-content: space-around;
-  height: 64px;
-  max-width: 650px;
+  justify-content: space-between;
+  height: 64px; 
+  max-width:650px;
   border: 1px solid #ffffff9a;
   opacity: 80%;
   z-index: 999;
@@ -225,19 +237,22 @@ display: none;
   position: sticky;
   top: 15px;
   min-width:0;
-  flex-wrap:wrap;
+  position: relative;
  
 }
+
 
 .navlinks {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: px px;
-  margin: px px;
   position: relative;
   white-space: nowrap;
   transition: 0.3s ease;
+  margin-left: 15px;
+
+
+ 
 }
 
 .con:hover .g-icon {
@@ -254,10 +269,14 @@ display: none;
 
 .navlink {
   list-style: none;
-  margin-left: px;
-  padding: 12px 12px;
+  margin-right:20px;
+  padding: px 12px;
   border: 1px solid transparent;
+  white-space: nowrap;
+  
 }
+
+
 a {
   text-decoration: none;
   color: rgb(255, 254, 254);
@@ -273,7 +292,6 @@ a {
   position: absolute;
   border-radius: 8px;
   display: none;
-  padding: px px;
   margin-left: -45px;
   transition: all 0.3s ease;
 }
@@ -300,11 +318,13 @@ a {
   color: rgb(252, 248, 248);
 }
 
+
 .droplink:hover {
   background-color: #11121a;
   border-radius: 8px;
   color: #4885c4;
 }
+
 
 .jack:hover .droplinks {
   display: block;
@@ -415,9 +435,19 @@ input::placeholder {
   color: #9eb3bf;
 }
 
-.ham {
-  display: none;
+
+
+
+.ham{
+  background-color: transparent;
+  border: none;
+display: non;
+margin-left: 500px;
+margin-top: -50px;
+display: none;
+
 }
+
 
 .fes,
 .sec,
@@ -576,15 +606,20 @@ p {
   border: 1px solid #fffdfd;
 }
 
+
+
+
 /* Cards2 */
 
 .kards2 {
+  max-width: 90%;
   width: 1216px;
-  height: 900px;
+  height: auto;
   display: inline;
   animation: appearxx linear;
   animation-timeline: view();
   animation-range: entry 0;
+  flex-wrap: wrap;
 
   
 }
@@ -592,8 +627,16 @@ p {
 
 
 
+.box-wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 10px;
+width: 1216px;
+height: auto;
 
 
+}
+/*
 .box-wrap1a {
   display: flex;
   justify-content: center;
@@ -620,6 +663,8 @@ p {
   height: 178px;
 }
 
+
+*/
 .boxx {
   height: 192px;
   width: 192px;
@@ -1106,6 +1151,449 @@ animation: appearxx linear;
 
 
 
+
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 450px){
+
+.navbar{
+  display: none;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 20px;
+flex-direction: column;
+background-color:hsla(205, 72%, 7%, 0.836);
+align-items: flex-start;
+border-radius: 0;
+position: absolute;
+height: 100%;
+width: 350px;
+top: 0;
+right: 0;
+padding: 1rem 1rem;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+ backdrop-filter:blur(10px);
+ margin: auto;
+ z-index: 2;
+ margin-right: -100px;
+
+}
+
+.navbar.active{
+display: block;
+
+}
+
+.ham{
+padding: 10px 10px;
+padding-left: 1080px;
+margin-top: -30px;
+padding-top: -50px;
+z-index: 999;
+
+}
+
+/* kards Box Sector */
+
+.box-wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin-left: 70px;
+}
+
+
+.kards2 {
+    padding: 2rem .8rem;
+  }
+
+  .kardp {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: -8px;
+  
+  }
+
+  .box-tag {
+    padding: 1rem;
+  }
+
+  #iconme {
+    font-size: 2.2rem;
+  }
+
+  .iconwrap p {
+    font-size: .95rem;
+  }
+
+
+
+
+
+
+
+.logo{
+margin-top: 25px;
+
+}
+
+
+.navbar.active{
+
+  display: block;
+}
+
+.navlinks{
+  display: block;
+  gap: 20px;
+
+}
+
+.right img{
+  height: 300px;
+  width: 300px;
+}
+
+.navlink {
+  margin-bottom: 20px;
+  
+}
+
+.con a{
+  padding-bottom: 20px;
+}
+.navlinks.active{
+
+margin-top: 30px;
+margin-bottom: 30px;
+
+
+}
+
+
+
+.navlink.con{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.navlinks a{
+
+  
+  margin-bottom: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+
+ .main-content .middle-content .ham {
+    display: block;
+    z-index: 20;
+    margin-top: -45px;
+    margin-left: 150px;
+  
+  }
+
+.ham{
+  display: none;
+     z-index: 100;
+    margin-top: -50px;
+    margin-right: 20px;
+    
+  }
+.ham.active{
+display: block;
+
+}
+
+
+
+
+.tag-line1{
+font-size: 18px;
+
+}
+
+.tag-line2{
+font-size: 15px;
+
+}
+
+.btn{
+padding:5px 5px;
+font-size:10px;
+}
+
+.btn.btn.outlined{
+padding-left: 10px;
+padding-right: 10px;
+font-size:10px ;
+}
+
+.search-input{
+  width: 350px;
+  right: 0;
+}
+
+.s-head{
+  display: flex;
+
+}
+
+.search-btn{
+  margin-left: 15px;
+}
+
+
+.kardp{
+font-size: 20px;
+
+}
+
+
+.kards2{
+  width: 100%;
+}
+
+
+.navbar.active .navlinks.active{
+
+  display: block;
+}
+
+ 
+
+
+  .logos{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-top: -8px;
+  margin-left:13px;
+}
+
+
+
+}
+
+
+
+@media(max-width: 650px){
+
+.navbar{
+  display: none;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 20px;
+flex-direction: column;
+background-color:hsla(205, 72%, 7%, 0.836);
+align-items: flex-start;
+border-radius: 0;
+position: absolute;
+height: 100%;
+width: 350px;
+top: 0;
+right: 0;
+padding: 1rem 1rem;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+ backdrop-filter:blur(10px);
+ margin: auto;
+ z-index: 2;
+ margin-right: -100px;
+
+}
+
+.navbar.active{
+display: block;
+
+}
+
+.ham{
+padding: 10px 10px;
+padding-left: 180px;
+margin-top: -30px;
+padding-top: -50px;
+z-index: 999;
+
+}
+
+
+
+/* Box Kards Sector */
+
+
+  .box-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .box-tag {
+    padding: 1.2rem;
+  }
+
+  #iconme {
+    font-size: 2.5rem;
+  }
+
+
+
+
+
+.logo{
+margin-top: 25px;
+
+}
+
+
+.navbar.active{
+
+  display: block;
+}
+
+.navlinks{
+  display: block;
+  gap: 20px;
+
+}
+
+.right img{
+  height: 300px;
+  width: 300px;
+}
+
+.navlink {
+  margin-bottom: 20px;
+  
+}
+
+.con a{
+  padding-bottom: 20px;
+}
+.navlinks.active{
+
+margin-top: 30px;
+margin-bottom: 30px;
+
+
+}
+
+
+
+.navlink.con{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.navlinks a{
+
+  
+  margin-bottom: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+
+ .main-content .middle-content .ham {
+    display: block;
+    z-index: 20;
+    margin-top: -45px;
+    margin-left: 150px;
+  
+  }
+
+.ham{
+  display: none;
+     z-index: 100;
+    margin-top: -50px;
+    margin-right: 20px;
+    
+  }
+.ham.active{
+display: block;
+
+}
+
+
+
+
+.tag-line1{
+font-size: 18px;
+
+}
+
+.tag-line2{
+font-size: 15px;
+
+}
+
+.btn{
+padding:5px 5px;
+font-size:10px;
+}
+
+.btn.btn.outlined{
+padding-left: 10px;
+padding-right: 10px;
+font-size:10px ;
+}
+
+.search-input{
+  width: 350px;
+  right: 0;
+}
+
+.s-head{
+  display: flex;
+
+}
+
+.search-btn{
+  margin-left: 15px;
+}
+
+
+.kardp{
+font-size: 20px;
+
+}
+
+
+.kards2{
+  width: 100%;
+}
+
+
+.navbar.active .navlinks.active{
+
+  display: block;
+}
+
+ 
+
+
+  .logos{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-top: -8px;
+  margin-left:13px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+/* Animations */
 
 
 @keyframes appearxx {
