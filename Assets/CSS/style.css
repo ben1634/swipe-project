@@ -929,95 +929,70 @@ height: auto;
   transition: all .5s;
 }
 
+
+
+
+
 /* Cards */
+.kards{
+    width:100%;
+    max-width:1216px;
+    margin:0 auto;
 
-.kards {
-  width: 1216px;
-  height: 1100px;
-  display: inline;
-  animation: appearxx linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px,1fr));
+    gap:20px;
+
+    padding:20px;
+    box-sizing:border-box;
 }
 
-.box-wrap1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1216px;
-  height: 178px;
-  margin-bottom: 20px;
+
+.box{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    width:100%;
+    min-height:180px;
+
+    padding:24px;
+
+    background:#191919;
+    border-radius:12px;
+
+    transition:.3s;
+}
+.box:hover{
+    background:#2a2a2a;
 }
 
-.box-wrap2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1216px;
-  height: 178px;
-  margin-bottom: 20px;
+.pic-log{
+    width:clamp(40px,6vw,48px);
+    height:clamp(40px,6vw,48px);
+
+    flex-shrink:0;
+}
+.tagwrap{
+    flex:1;
 }
 
-.box-wrap3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1216px;
-  height: 178px;
+.pan{
+    margin-bottom:12px;
+    font-size:clamp(1.1rem,2vw,1.3rem);
+    font-weight:600;
 }
 
-.box {
-  height: 178px;
-  width: 395px;
-  background-color: #4c12df;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  background-color: #191919;
-  cursor: pointer;
-}
 
-.box:hover {
-  background-color: #b2b0b026;
-  transition: all 0.3s ease;
-}
+.tophead{
+    max-width:900px;
 
-.box-tag {
-  display: flex;
-  justify-content: space-around;
-}
+    margin:0 auto 40px;
 
-.pic-log {
-  height: 64px;
-  width: 64px;
-  margin-top: 10px;
-}
+    text-align:center;
 
-.tagwrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 248px;
-  height: 88px;
-}
-
-.box-tag {
-  margin-top: 35px;
-  margin-left: 15px;
-}
-
-.tophead {
-  margin-bottom: 50px;
-  width: 1216px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffff;
-  font-size: 48px;
-  width: 700px;
+    font-size:clamp(2rem,5vw,3rem);
+    color: #fff;
 }
 
 .topwrap {
@@ -1025,25 +1000,35 @@ height: auto;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-}
+  flex-wrap: wrap;
 
-.lowhead {
-  margin-bottom: 50px;
-  width: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #9a9898;
-  font-size: 22px;
-  line-height: 30px;
-}
 
+}
+.lowhead{
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+    font-size:clamp(1rem,2vw,1.25rem);
+
+    line-height:1.7;
+    color: #BFBFBF;
+}
 .lowrap {
-  width: 1216px;
+width:100%;
+    max-width:1216px;
+    margin:auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+
 }
+
+
+
 /* footer */
 
 footer {
@@ -1157,7 +1142,7 @@ animation: appearxx linear;
 
 /* MEDIA QUERIES */
 
-@media(max-width: 450px){
+@media(max-width: 480px){
 
 .navbar{
   display: none;
@@ -1232,6 +1217,33 @@ z-index: 999;
 
 
 
+
+
+.kards{
+    width:100%;
+    max-width:1216px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(1, 1fr);
+    gap:20px;
+
+    padding:20px;
+    box-sizing:border-box;
+}
+
+
+
+.box{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .tagwrap{
+        width:100%;
+    }
+
+  
 
 
 
@@ -1382,7 +1394,7 @@ font-size: 20px;
 
 
 
-@media(max-width: 650px){
+@media(max-width: 768px){
 
 .navbar{
   display: none;
@@ -1442,6 +1454,33 @@ z-index: 999;
 
 
 
+
+
+.kards{
+    width:100%;
+    max-width:1216px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.kards{
+        gap:16px;
+        padding:16px;
+    }
+
+    .box{
+        padding:20px;
+    }
+
+
+
+  
 
 .logo{
 margin-top: 25px;
