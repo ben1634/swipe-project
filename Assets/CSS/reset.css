@@ -12,31 +12,9 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   position: relative;
-    display: flex;
-
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cedbe9+0,aac5de+10,419ad6+21,419ad6+21,419ad6+30,3a84c3+37,3a84c3+39,3a84c3+48,3a84c3+48,6199c7+50,4bb8f0+52,4bb8f0+52,419ad6+59,3a8bc2+84,26558b+100 */
-  backgroun: linear-gradient(
-    5deg,
-    #13242d 10%,
-    #aac5de 10%,
-    #419ad6 21%,
-    #13242d 21%,
-    #03070b,
-    30%,
-    #3a84c3 37%,
-    #3a84c3 15%,
-    #03070b 48%,
-    #3a84c3 48%,
-    #6199c7 50%,
-    #4bb8f0 30%,
-    #4bb8f0 52%,
-    #1e292f 59%,
-    #3a8bc2 84%,
-    #03070b 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-color: #0d1014;
   display: flex;
   grid-template-columns: auto 1fr;
+    background-color: #0d1014;
 }
 
 
